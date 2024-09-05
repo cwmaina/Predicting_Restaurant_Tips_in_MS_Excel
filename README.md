@@ -40,37 +40,21 @@ In the initial data preparation phase, the following tasks were performed:
      - (also known as a predictor variable, explanatory variable, or input variable) is a variable that is manipulated or selected by the researcher or modeler to observe its effect on the dependent variable. It is called
        "independent" because it is not affected by other variables in the model but can influence changes in the dependent variable.
 
-    ![1_Independent_Dependent_Variables](https://github.com/user-attachments/assets/2a8eb4cd-7a13-4594-8a6c-6452eece7a2d)
+             ![1_Independent_Dependent_Variables](https://github.com/user-attachments/assets/2a8eb4cd-7a13-4594-8a6c-6452eece7a2d)
 
+2. Identify which predictive problem is needed
+   - We are interested in predicting the tip amount based on other features such as the total bill, party size, and customer demographics (e.g., sex, smoker status), as well as contextual factors (e.g., day of the week, time of day).
+     Thus, the predictive problem is a regression problem, where the goal is to model and predict a continuous outcome (the tip amount).
 
-- Select 'Data' tab
-- Select 'Data Analysis'
-- Select 'Histogram' and click 'Ok'
-- In the Histogram dialogue box click the 'Labels' checkbox as there are labels in the data
-- In the 'Input Reference' select 'SalesData!D1:D51291' and in the 'Bin Reference' select 'Working!K3:K7'
-- In the 'Output' select a new worksheet for the binning table, click the histogram checkbox and then ok.
+3. Encode the categorical variables to numeric values using if conditions
+   - A categorical variable is a type of variable that represents data which can be divided into groups or categories that do not have a natural ordering. These are often known as qualitative variables and can represent types or
+     labels, as opposed to quantitative variables which represent numerical values that you can perform arithmetic operations on.
 
-2. Prepare a table of sales and profit month wise in the working sheet
+     ![2_Categorical_Variables](https://github.com/user-attachments/assets/8b037542-a2c2-4721-bab3-990dec89ec65)
 
-```MS Excel
-Sales= SUMIFS('Sales Data'!$H:$H,'Sales Data'!$U:$U,Working!$B4,'Sales Data'!$F:$F,$R$3)
-```
-```MS Excel
-Profit=SUMIFS('Sales Data'!$K:$K,'Sales Data'!$U:$U,Working!$B4,'Sales Data'!$F:$F,$R$3)
-```
+4. For each independent numeric value, find its correlation coefficient with respect to the tip
 
-3. Create a user control combo box for the product category
-
-- Select 'Developer'
-- Select 'Insert'
-- Select 'Form Controls' then 'Combo box'
-- Draw the box on the Working Sheet
-- Right click on the box and Select 'Format Control'
-- 'Input Range' is the 'List of Product Categories' in Q2:Q5
-- 'Cell Link' is $R$2
-- 'Drop Down Lines' is 4
-
-4. Create a Column Chart of the month wise table and region wise table
+   ```
 
 - Select 'Months' and 'Sales' columns
 - Select 'Insert, Chart, Clustered Column'
