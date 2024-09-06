@@ -54,12 +54,14 @@ In the initial data preparation phase, the following tasks were performed:
 
 4. For each independent numeric value, find its correlation coefficient with respect to the tip
 
+   ```MS Excel
+   Sex_correl= CORREL(B2:B244,AI2:AI244)
    ```
+  - Repeat for all categorical variables
 
-- Select 'Months' and 'Sales' columns
-- Select 'Insert, Chart, Clustered Column'
-- Select 'Region' and 'Sales' columns
-- Select 'Insert, Chart, Clustered Column'
+5. Build an appropriate model with the dataset
+
+  
 
 ## Results
 
