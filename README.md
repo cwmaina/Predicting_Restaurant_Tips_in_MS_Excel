@@ -63,10 +63,10 @@ In the initial data preparation phase, the following tasks were performed:
    Predicted tip= Intercept + (Coefficient for Independent Variable x  Independent Variable Value)
 
 7. Calculate the Root Mean Square Error (RMSE) of the model
-   Residual= Actual Tip - Predicted Tip
-   Square of the Residuals= (Residuals)^2
-   Average Square of the Residuals= Average of the Square of Residuals Column
-   Root Mean Square Error(RMSE)= The Square Root of the Average Square of the Residuals   
+   - Residual= Actual Tip - Predicted Tip
+   - Square of the Residuals= (Residuals)^2
+   - Average Square of the Residuals= Average of the Square of Residuals Column
+   - Root Mean Square Error(RMSE)= The Square Root of the Average Square of the Residuals   
 
 ## Results
 1. Identify features that are independent and dependent
@@ -95,10 +95,10 @@ In the initial data preparation phase, the following tasks were performed:
    For sex_pred_tip column cell D2: 2.84313953488372+(0.246478299511184*B2)= 2.843139535
 
 7. Calculate the Root Mean Square Error (RMSE) of the model for the Sex and Tip (Row 2)
-   Residual= Actual Tip - Predicted Tip = -1.833139535
-   Square of the Residuals= (Residuals)^2 = 3.360400554
-   Average Square of the Residuals= Average of the Square of Residuals Column= 1.896445388
-   Root Mean Square Error(RMSE)= The Square Root of the Average Square of the Residuals= 1.377114878
+   - Residual= Actual Tip - Predicted Tip = -1.833139535
+   - Square of the Residuals= (Residuals)^2 = 3.360400554
+   - Average Square of the Residuals= Average of the Square of Residuals Column= 1.896445388
+   - Root Mean Square Error(RMSE)= The Square Root of the Average Square of the Residuals= 1.377114878
 
    
 ## References
